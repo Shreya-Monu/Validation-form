@@ -1,0 +1,226 @@
+/* Reset some default browser styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Gradient background */
+body {
+  background-image: url('image-1.jpg'); /* ✅ your image */
+  background-size: cover;               /* Cover entire screen */
+  background-position: center;          /* Center the image */
+  background-repeat: no-repeat;         /* Don't repeat image */
+  min-height: 100vh;                    /* Full height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;                        /* Space on small screens */
+}
+
+
+
+/* Registration form container */
+.container {
+    background: #d5b7a0;
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 420px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Heading */
+.container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+    position: relative;
+}
+
+/* Form fields */
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: white;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input:focus {
+    outline: none;
+    border-color: #5e4bfa;
+}
+
+/* Password requirements */
+.Password-rules {
+    background-color: #f5f6fb;
+    border-radius: 8px;
+    padding: 10px 15px;
+    margin-bottom: 20px;
+    font-size: 13px;
+    color: #333;
+}
+
+.Password-rules strong {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.Password-requirements {
+    list-style-type: disc;
+    padding-left: 18px;
+}
+
+.Password-requirements li {
+    margin-bottom: 6px;
+}
+
+/* Red/Green for validation */
+.Password-requirements li.valid {
+    color: green;
+}
+.Password-requirements li.invalid {
+    color: red;
+}
+
+/* Error and success messages */
+.error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    font-size: 12px;
+    margin-top: 4px;
+    display: none;
+}
+
+/* Button */
+button,
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background: rgb(42, 41, 41);
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+    bottom: 10px;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: #9C9CAC;
+}
+.password-wrapper {
+  position: relative;
+}
+
+.password-wrapper input {
+  width: 100%;
+  padding-right: 40px;
+}
+
+.toggle-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.button-group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.button-group button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.button-group .login-btn {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+}
+
+.button-group .login-btn:hover {
+  background: #e0e0e0;
+}
+
+.signup-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+}
+
+.signup-link a {
+  color: white;
+  text-decoration: none;
+}
+
+.signup-link a:hover {
+  text-decoration: underline;
+}
+.container {
+    background: #54575D;
+    padding: 30px 25px;
+    width: 100%;
+    max-width: 450px;
+    height: 90vh; /* Fixed height */
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Hide overflow from container */
+    display: flex;
+    flex-direction: column;
+}
+
+.form-wrapper {
+    overflow-y: auto;   /* Enables vertical scroll */
+    padding-right: 10px; /* Avoid scrollbar overlap */
+    flex-grow: 1;
+}
+
+/* Optional: Custom scroll styling */
+.form-wrapper::-webkit-scrollbar {
+    width: 6px;
+}
+.form-wrapper::-webkit-scrollbar-thumb {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+}
+
+
